@@ -15,11 +15,16 @@ SPDX-License-Identifier: Apache-2.0
 
 import React, {Component} from 'react'
 import {Text as ReactText}  from 'react-native'
-import Svg,{ G, Path, Text, Circle} from 'react-native-svg'
+import { Svg } from "expo";
 import { Colors, Options, cyclic, identity, fontAdapt } from './util'
 import _ from 'lodash'
 import 'babel-polyfill'
 const Pie = require('paths-js/pie')
+
+const G = Svg.G;
+const Path = Svg.Path;
+const Text = Svg.Text;
+const Circle = Svg.Circle;
 
 export default class PieChart extends Component {
 
